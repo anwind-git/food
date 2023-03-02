@@ -1,0 +1,27 @@
+<div th:fragment="header">
+    <nav class="py-2 bg-light border-bottom">
+        <div class="container d-flex flex-wrap">
+            <ul class="nav me-auto">
+                <li class="nav-item"><a href="/" class="nav-link link-dark px-2 active" aria-current="page">Главная</a></li>
+                <li class="nav-item"><a href="/menu" class="nav-link link-dark px-2">Меню</a></li>
+                <li class="nav-item"><a href="/payment" class="nav-link link-dark px-2">Оплата и доставка</a></li>
+                <li class="nav-item"><a href="/contacts" class="nav-link link-dark px-2">Контакты</a></li>
+                <li class="nav-item"><a href="/menu/add" class="nav-link link-dark px-2">Добавить лот</a></li>
+            </ul>
+            <ul class="nav">
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Вход</a></li>
+                <li class="nav-item"><a href="#" class="nav-link link-dark px-2">Регистрация</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header class="py-3 mb-4 border-bottom">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
+                <span class="fs-4"><p th:text="${title}" /></span>
+            </a>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0" role="search">
+                <input type="search" class="form-control" placeholder="Поиск..." aria-label="Search">
+            </form>
+        </div>
+    </header>
+</div>
